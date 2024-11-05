@@ -1,0 +1,39 @@
+import java.sql.connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java .sql .Statement;
+import java .sql .SQL Exception;
+public class JDBC Example{
+ //JDBC URL, username ,and password of MySQL server
+private static final String URL = "jdbc:mysql://localhost:3306/24MCA
+private static final string USER="system";
+private static final string PASSWORD="manager";
+*/
+
+
+
+
+public static void main(String[] args){
+try{
+   //Local the JDBC driver
+   //Class. for Name("com . mysqlcj. jdbc .Driver");
+   Class .for Name("com . mysql . jdbc .Driver");
+  // Class .for Name("oracle . jdbc .driver .Oracle Driver");
+
+   //Establish a connection
+connection= Driver Manager .get.
+
+Statement statement1=connection .create Statement();
+
+
+//Execute a query
+String query ="SELECT id ,name, email FROM student";
+  String query1 = "insert into student values(103,'shiva','shiva123@abes.ac.in')";
+Result Set result Set = statement .execute Query(query);
+
+
+//Process the results
+while (result Set .next()) {
+   int id = result Set
+
+
